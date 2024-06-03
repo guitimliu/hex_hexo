@@ -43,7 +43,7 @@ blog_generator:
   order_by: -date
 
 # Miscellaneous
-favicon: /images/logo.svg
+favicon: /hex_hexo/images/logo.svg
 ```
 
 ## Layout
