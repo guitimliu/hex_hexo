@@ -13,8 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://guitimliu.github.io
-root: /hex_hexo/
+url: https://guitimliu.github.io/hex_hexo
 permalink: posts/:title/
 permalink_defaults:
 pretty_urls:
@@ -106,6 +105,4 @@ theme: hexschool
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repo: 'https://github.com/guitimliu/hex_hexo.git'
-  branch: 'gh-pages'
+  type: ''

@@ -1,12 +1,12 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="h-entry article article-type-<%= post.layout %>" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+  <div class="article-meta text-dark text-decoration-none mt-4 mb-4">
+    <%- partial('post/date', {class_name: 'article-date text-dark text-decoration-none', date_format: null}) %>
     <%- partial('post/category') %>
   </div>
   <div class="article-inner">
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
-      <header class="article-header">
+      <header class="article-header border-start border-black border-5 ps-4 mb-4 ">
         <%- partial('post/title', {class_name: 'p-name article-title'}) %>
       </header>
     <% } %>
@@ -22,8 +22,8 @@
         <%- post.content %>
       <% } %>
     </div>
-    <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" data-title="<%= post.title %>" class="article-share-link"><span class="fa fa-share"><%= __('share') %></span></a>
+    <footer class="article-footer mb-4">
+      <a href="#" data-url="<%- post.permalink %>" data-id="<%= post._id %>" data-title="<%= post.title %>" class="article-share-link text-black text-decoration-none">分享</a>
       <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><span class="fa fa-comment"><%= __('comment') %></span></a>
       <% } %>
@@ -41,9 +41,4 @@
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 </section>
-<% } %>
-<% if (!index && post.comments && theme.valine.enable && theme.valine.appId && theme.valine.appKey){ %>
-  <section id="comments" class="vcomment">
-
-  </section>
 <% } %>
