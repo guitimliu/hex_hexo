@@ -24,7 +24,7 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0",
     "bootstrap": "^5.3.3",
-    "hexo-pagination": "^3.0.0",
+    "hexo-pagination": "^4.0.0",
     "hexo-util": "^3.3.0"
   }
 }
